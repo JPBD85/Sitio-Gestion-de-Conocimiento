@@ -6,7 +6,7 @@
 **Multimedia:** Video guía y recursos visuales.  
 **Accesibilidad:** Semántica HTML, contraste, responsive.
 
-## Mapa (Mermaid)
+## Mapa
 ```mermaid
 flowchart LR
   A[Inicio] --> B[Documentos]
