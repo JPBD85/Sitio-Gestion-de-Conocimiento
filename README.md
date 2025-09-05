@@ -29,9 +29,6 @@ flowchart LR
 - `/js/script.js` — Interacciones, mock de datos y ROI.
 - `/assets/img`, `/assets/video` — Recursos multimedia.
 
-## Despliegue en GitHub Pages
-1) Crea un repositorio y sube el contenido de esta carpeta.
-2) En Settings → Pages, selecciona la rama y carpeta raíz.
-3) Accede a la URL que genere GitHub.
+
 
 > Nota: Las funciones de exportación son de demostración. Para backend (PHP/MySQL) o autenticación, integrar un API o un CMS headless.
