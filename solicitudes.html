@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solicitudes · Gestión del Conocimiento</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav container" aria-label="Principal">
+    <a href="index.html">Inicio</a>
+    <a href="solicitudes.html">Solicitudes</a>
+    <a href="documentos.html">Documentos</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="acerca.html">Acerca</a>
+  </nav>
+</header>
+
+  <main class="container">
+    <h1>Solicitudes</h1>
+    <div class="card">
+      <h2>Crear nueva solicitud</h2>
+      <form onsubmit="event.preventDefault(); alert('Solicitud registrada (demo)');">
+        <div class="grid cols-2">
+          <div>
+            <label for="tipo">Tipo de solicitud</label>
+            <select id="tipo" required>
+              <option value="">Selecciona…</option>
+              <option>Cambio de cuenta bancaria</option>
+              <option>Alta de nuevo miembro</option>
+              <option>Validación de identidad</option>
+            </select>
+          </div>
+          <div>
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" required>
+          </div>
+          <div>
+            <label for="detalle">Detalle</label>
+            <textarea id="detalle" rows="4" placeholder="Describe la solicitud…"></textarea>
+          </div>
+        </div>
+        <br>
+        <button class="btn" type="submit">Registrar</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Solicitudes recientes</h2>
+      <table class="table">
+        <thead><tr><th>ID</th><th>Tipo</th><th>Fecha</th><th>Estado</th></tr></thead>
+        <tbody>
+          <tr><td>1023</td><td>Cambio de cuenta bancaria</td><td>2025-08-18</td><td>En progreso</td></tr>
+          <tr><td>1022</td><td>Alta de nuevo miembro</td><td>2025-08-18</td><td>Completada</td></tr>
+          <tr><td>1021</td><td>Validación de identidad</td><td>2025-08-17</td><td>Pendiente</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+<footer class="container">
+  <p>Proyecto: Sistema de Gestión del Conocimiento (Records) · Implementación con HTML5 + JS · 2025</p>
+</footer>
+<script src="js/script.js"></script>
+
+</body>
+</html>

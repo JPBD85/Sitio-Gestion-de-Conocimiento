@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestión del Conocimiento · Records</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav container" aria-label="Principal">
+    <a href="index.html">Inicio</a>
+    <a href="solicitudes.html">Solicitudes</a>
+    <a href="documentos.html">Documentos</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="acerca.html">Acerca</a>
+  </nav>
+</header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="badge">Web + Multimedia · Scrum</span>
+        <h1>Sistema de Gestión del Conocimiento</h1>
+        <p>Centraliza documentos y solicitudes del área de Records para reducir tiempos de búsqueda y mejorar la atención. Incluye navegación clara, recursos multimedia e indicadores de impacto.</p>
+        <a class="btn" href="documentos.html">Explorar documentos</a>
+      </div>
+      <div class="card">
+        <h3>Indicadores rápidos</h3>
+        <div class="grid cols-2">
+          <div>
+            <div class="muted">Ahorro mensual (horas)</div>
+            <div class="kpi">950.5 h</div>
+          </div>
+          <div>
+            <div class="muted">Costo por hora</div>
+            <div class="kpi">$125</div>
+          </div>
+          <div>
+            <div class="muted">Costo proyecto</div>
+            <div class="kpi">$73,945.09</div>
+          </div>
+          <div>
+            <div class="muted">ROI</div>
+            <div class="kpi" id="roi-out">Calculando…</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Carta de navegación</h2>
+      <table class="table">
+        <thead><tr><th>Página</th><th>Propósito</th><th>Enlaces clave</th></tr></thead>
+        <tbody>
+          <tr><td>Inicio</td><td>Resumen, KPIs y acceso rápido.</td><td>Documentos, Solicitudes, Reportes, Acerca</td></tr>
+          <tr><td>Solicitudes</td><td>Registro, consulta y estado.</td><td>Crear nueva, Buscar, Detalle</td></tr>
+          <tr><td>Documentos</td><td>Repositorio de guías y formularios.</td><td>Filtros, Detalle, Descarga</td></tr>
+          <tr><td>Reportes</td><td>Indicadores y descargas.</td><td>ROI, Exportar</td></tr>
+          <tr><td>Acerca</td><td>Contexto, objetivos, manual de uso.</td><td>Guía rápida</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Repositorio destacado</h2>
+      <div id="kb-list"></div>
+    </section>
+  </main>
+
+<footer class="container">
+  <p>Proyecto: Sistema de Gestión del Conocimiento (Records) · Implementación con HTML5 + JS · 2025</p>
+</footer>
+<script src="js/script.js"></script>
+
+</body>
+</html>
